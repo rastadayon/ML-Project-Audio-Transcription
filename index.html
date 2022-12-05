@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>MelNet - Audio Samples</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Crimson+Text:400,400i" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="index.css">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class='section'>
+        <h1>Cross-Lingual Transfer Learning for Automatic Speech Recognitions</h1>
+        <p>Audio samples accompanying the project <i>Cross-Lingual Transfer Learning for Automatic Speech Recognition</i>.</p>
+
+        <h4>Contents:</h4>
+        <p>
+        <ul class='toc'>
+            <li><a href='#section-1'>English Dataset Samples (Timit)</a></li>
+            <li><a href='#section-2'>Dutch Common Voice Samples</a></li>
+            <li><a href='#section-3'>French Common Voice Samples</a></li>
+        </ul>
+        </p>
+    </div>
+
+    <hr>
+
+
+    <div id='section-1' class='section'>
+        <h2>English Dataset Samples (Timit)</h2>
+        <p>Audio samples with their corresponding text and predicted transcriptions for the <a href="https://catalog.ldc.upenn.edu/LDC93s1">Timit</a> dataset. 
+        The transcriptions are results obtained from the pre-trained wav2vec 2.0 model after fine-tuning on the Timit dataset.</p>
+
+        <h3>Samples</h3>
+        <div class='playlist'>
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/audios/en-timit/aim to balance.mp3' type='audio/mpeg'></audio></div>
+            <p><strong>Text:</strong> aim to balance your employee benefit package</p>
+            <p><strong>Prediction:</strong> aim to balenge your employ you benefits package	</p>
+            <hr width="500px;" color="grey" size="1">
+
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/audios/en-timit/artificial intelligence.mp3' type='audio/mpeg'></audio><br></div>
+            <p><strong>Text:</strong> artificial intelligence is for real</p>
+            <p><strong>Prediction:</strong> art official intelligence is for real</p>
+            <hr width="400px;" color="black" size="1">
+
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/audios/en-timit/the nearest.mp3' type='audio/mpeg'></audio></div>
+            <p><strong>Text:</strong> the nearest synagogue may not be within walking distance</p>
+            <p><strong>Prediction:</strong> the nearest synnegu may not be within walk in distance</p>
+            <!-- <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-3.mp3' type='audio/mpeg'></audio></div>
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-4.mp3' type='audio/mpeg'></audio></div>
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/mp3/blizzard_unconditional/sample-5.mp3' type='audio/mpeg'></audio></div> -->
+        </div>
+    </div>
+
+    <hr>
+    <div id='section-2' class='section'>
+        <h2>Dutch Common Voice Samples</h2>
+        <p>Audio samples from Dutch <a href="https://commonvoice.mozilla.org/en/datasets">Common Voice</a> dataset with their corresponding text and predicted transcriptions for both
+             the baseline XLS-R and transfer learning model wav2vec 2.0. The results are obtained after fine-tuning the XLS-R and monolingual pre-trained wav2vec 2.0 models on ~10 hours of the Dutch Common Voice.</p>
+
+        <h3>Samples</h3>
+        <div class='playlist'>
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/audios/nl-commonvoice/sample1.wav' type='audio/mpeg'></audio></div>
+            <p><strong>Text:</strong> de schoonmaakploeg was net gepasseerd in de vrouwentoiletten</p>
+            <p><strong>XLS-R Prediction:</strong> de schoonmakploeg was let gebaseerd in de vrouwentwaliten</p>
+            <p><strong>wav2vec 2.0 Prediction:</strong> de schoonmaak bloeg was lit gebaseerd in de vrouwe tweleten</p>
+            <hr width="500px;" color="grey" size="1">
+
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/audios/nl-commonvoice/sample2.wav' type='audio/mpeg'></audio></div>
+            <p><strong>Text:</strong> door de wind moest ze zich goed vasthouden aan de reling</p>
+            <p><strong>XLS-R Prediction:</strong> door de wind moest e zich goed vasthouden aan de rijbing</p>
+            <p><strong>wav2vec 2.0 Prediction:</strong> door de wind moet zo zeer goed vasthouden aan de reping</p>
+            <hr width="500px;" color="grey" size="1">
+
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/audios/nl-commonvoice/sample3.wav' type='audio/mpeg'></audio></div>
+            <p><strong>Text:</strong> het containerschip lag aangemeerd in de haven</p>
+            <p><strong>XLS-R Prediction:</strong> het contyneschip lag aangemeert in de aven</p>
+            <p><strong>wav2vec 2.0 Prediction:</strong> het kont heen een schip lag aangemeerd in de haven</p>
+        </div>
+    </div>
+
+    <hr>
+
+    <div id='section-3' class='section'>
+        <h2>French Common Voice Samples</h2>
+        <p>Audio samples from French <a href="https://commonvoice.mozilla.org/en/datasets">Common Voice</a> dataset with their corresponding text and predicted transcriptions for both
+            the baseline XLS-R and transfer learning model wav2vec 2.0. The results are obtained after fine-tuning the XLS-R and monolingual pre-trained wav2vec 2.0 models on ~10 hours of the French Common Voice.</p>
+
+        <div class='playlist'>
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/audios/fr-commonvoice/sample1.wav' type='audio/mpeg'></audio></div>
+            <p><strong>Text:</strong> un vrai travail intéressant va enfin être mené sur ce sujet</p>
+            <p><strong>XLS-R Prediction:</strong> un vrai travail intéréssant va enfin être mener sur ce sujet</p>
+            <p><strong>wav2vec 2.0 Prediction:</strong> un vrai travaillintéressant va enfin être mener sur ce sujet</p>
+            <hr width="500px;" color="grey" size="1">
+
+
+            <div class='labeled-audio'><audio preload='metadata' controls><source src='samples/audios/fr-commonvoice/sample2.wav' type='audio/mpeg'></audio></div>
+            <p><strong>Text:</strong> un comité interministériel du handicap s’est tenu il y a quelques semaines</p>
+            <p><strong>XLS-R Prediction:</strong> un cuanmité intelmnistérial du hendicap s'étenu il y a guelte semaine</p>
+            <p><strong>wav2vec 2.0 Prediction:</strong> un camite entaminitéréal du randécapes s'es tenu il y a quelque semaine</p>        
+        </div>
+    </div>
+
+    <hr>
+
+</body>
+</html>
+
+<script>
+document
+    .getElementById('select-speaker')
+    .addEventListener('change', function () {
+        'use strict';
+        var targets = document.getElementsByClassName("select-speaker")
+        for (let i = 0; i < targets.length; i++) {
+            name = "samples/mp3/ted_speakers/" + this.value + "/sample-" + i.toString() + ".mp3"
+            targets[i].setAttribute("src", name)
+            targets[i].parentElement.load()
+        }
+});
+</script>
